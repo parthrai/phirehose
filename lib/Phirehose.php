@@ -837,7 +837,9 @@ abstract class Phirehose
    *
    * @return NULL
    */
-  public function heartbeat() {}
+  public function heartbeat() {
+	  curl_exec(curl_init('http://beats.envoyer.io/heartbeat/oqzUyPcKxssyDkO'));
+  }
   
   /**
    * Set host port
